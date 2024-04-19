@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'nickdg.Java Spring Boot security project 1.0' is invalid and this project uses 'nickdg.Java.Spring.Boot.security.project10' instead.
+* The original package name 'nickdg.Java Spring Boot security project 1.0' is invalid and this project uses 'nickdg.Java.Spring.Boot.security.project1' instead.
 
 # Getting Started
 

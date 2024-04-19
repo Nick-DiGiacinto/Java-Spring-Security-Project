@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>nickdg</groupId>
-	<artifactId>Java-Spring-Boot-security-project-1.0</artifactId>
+	<artifactId>Java-Spring-Boot-security-project-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Java-Spring-Boot-security-project-1.0</name>
 	<description>Security project for Spring Boot</description>
