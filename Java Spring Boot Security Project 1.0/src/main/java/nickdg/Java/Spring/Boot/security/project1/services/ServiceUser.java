@@ -41,8 +41,12 @@ public class ServiceUser {
         return ud.save(found);
     }
 
+    public User findByUsername(String username) {
+        return ud.findByUsername(username).orElseThrow(() -> new ExceptionNotFound("The username " + username + " was not found."));
+    }
+
     public User save(UserDTO payload) {
-        if (ud.existsByUsername(payload.username())) throw new ExceptionBadRequest("Username " + payload.username() + " is not available.");
+        if (ud.existsByUsername(payload.username())) throw new ExceptionBadRequest("The username " + payload.username() + " is not available.");
         else if (ud.existsByEmail(payload.email())) throw new ExceptionBadRequest("Email " + payload.email() + " is already being used");
         else {
             User newUser = new User(payload.username(), payload.password(), payload.fullName(), payload.email(), TypeOfUser.valueOf(payload.role()));
